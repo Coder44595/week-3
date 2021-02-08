@@ -1,0 +1,107 @@
+* {                 /* applies to all elements */
+  padding: 0;
+  margin: 0;
+}
+
+  body{
+      background-color: khaki ;
+      background-image: url(https://cdn4.vectorstock.com/i/1000x1000/77/93/restaurant-menu-design-on-wood-background-vector-3417793.jpg);
+  }
+
+  menus {
+    box-shadow: 10px 5px 30px 15px chocolate;
+    border-width: 5rem;
+    border-radius: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+    z-index: 5;
+  }
+
+
+/*
+
+  }
+
+
+/* css defaults for mobile devices */
+h1 {
+  padding: 1rem;
+  border-bottom: solid 1px black;
+}
+article {
+  border: solid 1px black;   /* adds a border around the box */
+  width: calc(100% - 2rem);
+  height: auto;
+  margin: 1rem 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  /* css overrides for mid-sized screens goes here */
+    section {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: none;
+        gap: 1rem;
+    }
+    article {
+        margin: 0;
+        width: 100%;
+    }
+    body{
+      background-color:sandybrown ; 
+  }
+  
+}
+
+@media screen and (min-width: 60em) {
+  /* css overrides for large screens goes here */
+  section {
+      grid-template-columns: auto auto auto;
+      background-color:burlywood;
+  }
+}
+
+article header {
+  height: 24rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+dl div{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+body, html {
+  height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.685)), url("photographer.jpg");
+
+/* Set a specific height */
+height: 50%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}

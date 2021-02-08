@@ -1,0 +1,29 @@
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Welcome to Quick Feast</h1>
+    <p>Deliciouse Food deliveries made easy</p>
+    <button>Click here</button>
+  </div>
+</div>
+
+<button onclick="location.href='http://localhost:3001/add'" type="button">
+         <a href="http://localhost:3001/add">Add</a></button>
+
+<h1>Restaurants</h1>
+<section>
+    {{#each restaurant}}
+    <span>
+    <a href="/restaurant/{{this.id}}">
+    <article>
+        <header style="background-image: url({{this.image}});">
+        <main>{{this.name}}</main>
+        <footer>{{this.menus.length}} menus</footer> 
+      </article>
+      </a>
+      <a href="/restaurant/{{this.id}}/delete">Delete Restaurant</a>
+      </span>
+     {{/each}}
+</section>
+
+
+

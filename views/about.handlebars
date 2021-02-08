@@ -1,0 +1,12 @@
+<h1>{{Restaurant.name}}</h1>
+<br>
+    <article class="menus">
+        {{#each Restaurant.menus}}
+            <main>{{this.title}}</main>
+            <br>
+            {{#each this.items}}
+                <p>{{this.name}}</p>
+            {{/each}}
+            <br>
+        {{/each}}
+    </article>
